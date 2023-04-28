@@ -1,0 +1,659 @@
+@font-face {
+    font-family: myFamilyFont;
+    src: url(Orbitronio.ttf);
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+    z-index: 0;
+}
+
+.header-right {
+    float: right;
+    z-index: 1;
+}
+
+#marquee {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+header { 
+    /*background-image: url(head.png); */
+    color: #fbaf43;
+    height: 600px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 65px;
+    overflow: hidden; 
+    top: -100px;
+    width: 100%;
+    position: absolute;
+    float: left;
+    
+}
+
+video {
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-position: center;
+    object-fit: cover;
+}
+
+body,html {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin: 0;
+}
+
+header a { text-decoration: none;}
+header a:visited {color:#98B0A3;}
+header a:hover { color: white}
+
+nav a { text-decoration: none;}
+nav a:visited {color:#fbaf43;}
+nav a:hover {color: white; transition: 0.5s ease; text-shadow: 4px 4px 5px white;
+}
+
+nav { 
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    float: left;
+}
+
+nav li {
+    width: 125px;
+    height: 75px;
+    border-radius: 15px 15px 15px 15px;
+    border-style: none;
+    display: inline-block;
+    line-height: 35px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    width: 100%;
+    padding: 1px 1px;
+    list-style: none;
+    text-align: right;
+    outline-color: #283845;
+    position: relative;
+}
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+.show {
+    display: block;
+}
+
+main {
+    background-color: #283845;
+}
+
+main.border1{
+    border-style: solid;
+    border-color: #BAA177;
+}
+
+
+#potenialJobImage {
+    position: relative;
+    z-index: 1;
+    height: 600px;
+    background-image: url(grad.png);
+    background-repeat: no-repeat;
+    background-size: 80% 50%;
+}
+
+.grad-txt {
+    z-index: 2;
+    position: absolute;
+    top: 450px;
+    left: 20px;
+    text-align: left;
+    font-size: 300%;
+    background-color: white;
+    color: black;
+    font-family: myFamilyFont;
+}
+
+h2 {
+    font-size: 200%;
+    top: 100px;
+    color: white;
+}
+
+h3 {
+    font-size: 150%;
+    top: 0px;
+    color: white;
+}
+
+ul {
+    font-size: 125%;
+    color: white;
+}
+
+p {
+    font-size: 30px;
+    color: white;
+}
+
+#octogonTemp {
+    height: 1850px;
+    background: url(circuit.png);
+    background-size: 105% 100%;
+    margin-top: 192px;
+    margin-left: -50px;
+    text-decoration: none;
+}
+
+.container {
+    position: relative;
+    object-position: center;
+    object-fit: cover
+}
+
+.mainBox_DC {
+    position: absolute;
+    top: 134px;
+    left: 143px;
+    font-size: 180%;
+    width: 400px;
+    height: 100px;
+    line-height: 100px;
+    text-align: left;
+    color: #d58936;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.mainBox_Info {
+    position: absolute;
+    top: 210px;
+    left: 143px;
+    font-size: 143%;
+    width: 310px;
+    text-align: left;
+    color: #d58936;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+
+#map {
+    margin-left: auto;
+    margin-right: auto;
+    top: 400px;
+    width: 95%;
+    height: 750px;
+    background-color: black;
+}
+
+.mainBox_sideInfo1 {
+    position: absolute;
+    top: 200px;
+    left: 475px;
+    font-size: 170%;
+    color: #98B0A3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mainBox_sideInfo2 {
+    position: absolute;
+    top: 260px;
+    left: 490px;
+    font-size: 170%;
+    color: #d58936;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mainBox_sideInfo3 {
+    position: absolute;
+    top: 320px;
+    left: 445px;
+    font-size: 170%;
+    color: #98B0A3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mainBox_sideInfo4 {
+    position: absolute;
+    top: 375px;
+    left: 475px;
+    font-size: 170%;
+    color: #d58936;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mainBox_sideInfo5 {
+    position: absolute;
+    top: 435px;
+    left: 475px;
+    font-size: 170%;
+    color: #98B0A3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mainBox_bottomInfo {
+    position: absolute;
+    top: 850px;
+    left: 150px;
+    font-size: 180%;
+    width: 450px;
+    text-align: left;
+    letter-spacing: 1.25px;
+    line-height: 50px;
+    color: #98B0A3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.mainBox_bottomInfo a:hover {color: black; transition: 0.5s ease; text-shadow: 4px 4px 5px black;}
+.mainBox_bottomInfo a {text-decoration: none;}
+.mainBox_bottomInfo a:visited {color:#fbaf43;}
+
+
+.right_Faculty {
+    position: absolute;
+    top: 174px;
+    right: 384px;
+    font-size: 132%;
+    height: 104px;
+    width: 106px;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 104px;
+    text-align: center;
+    color: #d58936;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    animation-name: circuit;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.right_Faculty a:hover {color: black; transition: 0.5s ease; text-shadow: 4px 4px 5px black;}
+.right_Faculty a {text-decoration: none;}
+.right_Faculty a:visited {color:#fbaf43;}
+
+.right_Alumni {
+    position: absolute;
+    top: 174px;
+    right: 252px;
+    font-size: 132%;
+    height: 104px;
+    width: 106px;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 104px;
+    text-align: center;
+    color: #d58936;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    animation-name: circuit;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.right_Alumni a:hover {color: black; transition: 0.5s ease; text-shadow: 4px 4px 5px black;}
+.right_Alumni a {text-decoration: none;}
+.right_Alumni a:visited {color:#fbaf43;}
+
+.Facilities {
+    position: absolute;
+    top: 170.8px;
+    right: 515.5px;
+    font-size: 132%;
+    height: 104px;
+    width: 106px;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 104px;
+    text-align: center;
+    color: #d58936;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    animation-name: circuit;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+@keyframes circuit {
+    0%   {background-color: darkslategray;}
+    25%  {background-color: gray;}
+    50%  {background-color: lightgrey;}
+    100% {background-color: white;}
+}
+
+.Facilities a:hover {color: black; transition: 0.5s ease; text-shadow: 4px 4px 5px black;}
+.Facilities a {text-decoration: none;}
+.Facilities a:visited {color:#fbaf43;}
+
+
+.right_OnlineRes {
+    position: absolute;
+    top: 174px;
+    right: 115.5px;
+    font-size: 132%;
+    height: 104px;
+    width: 106px;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 104px;
+    text-align: center;
+    color: #d58936;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    animation-name: circuit;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.right_OnlineRes a:hover {color: black; transition: 0.5s ease; text-shadow: 4px 4px 5px black;}
+.right_OnlineRes a {text-decoration: none;}
+.right_OnlineRes a:visited {color:#fbaf43;}
+
+.right_Jobs {
+    position: absolute;
+    top: 308px;
+    right: 514.5px;
+    font-size: 132%;
+    height: 104px;
+    width: 106px;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 104px;
+    text-align: center;
+    color: #d58936;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    animation-name: circuit;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.right_Jobs a:hover {color: black; transition: 0.5s ease; text-shadow: 4px 4px 5px black;}
+.right_Jobs a {text-decoration: none;}
+.right_Jobs a:visited {color:#fbaf43;}
+
+.right_Faculty2 {
+    position: absolute;
+    top: 310.5px;
+    right: 384px;
+    font-size: 132%;
+    height: 104px;
+    width: 106px;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 104px;
+    text-align: center;
+    color: #d58936;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    animation-name: circuit;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.right_Faculty2 a:hover {color: black; transition: 0.5s ease; text-shadow: 4px 4px 5px black;}
+.right_Faculty2 a {text-decoration: none;}
+.right_Faculty2 a:visited {color:#fbaf43;}
+
+.con_English {
+    position: absolute;
+    top: 1035px;
+    left: 60px;
+    font-size: 150%;
+    width: 450px;
+    text-align: left;
+    letter-spacing: 1.25px;
+    line-height: 50px;
+    color: #98B0A3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    animation-name: red;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+}
+
+
+
+@keyframes red {
+0%   {color: #fbaf43}
+50%  {color: white;}
+100% {color: red;}
+}
+
+.con_English  a:hover {color: black; transition: 0.5s ease; text-shadow: 4px 4px 5px black;}
+.con_English  a {text-decoration: none;}
+.con_English  a:visited {color:#fbaf43;}
+
+.con_Inter {
+    position: absolute;
+    top: 1040px;
+    left: 370px;
+    font-size: 80%;
+    width: 300px;
+    text-align: left;
+    letter-spacing: 1.25px;
+    line-height: 20px;
+    color: #98B0A3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.con_Inter  a:hover {color: black; transition: 0.5s ease; text-shadow: 4px 4px 5px black;}
+.con_Inter  a {text-decoration: none;}
+.con_Inter  a:visited {color:#fbaf43;}
+
+.con_Art {
+    position: absolute;
+    top: 1035px;
+    left: 250px;
+    font-size: 150%;
+    width: 450px;
+    text-align: left;
+    letter-spacing: 1.25px;
+    line-height: 50px;
+    color: #98B0A3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.con_Art  a:hover {color: black; transition: 0.5s ease; text-shadow: 4px 4px 5px black;}
+.con_Art  a {text-decoration: none;}
+.con_Art  a:visited {color:#fbaf43;}
+
+.con_Graphic {
+    position: absolute;
+    top: 1140px;
+    left: 525px;
+    font-size: 125%;
+    width: 400px;
+    text-align: left;
+    letter-spacing: 1.25px;
+    line-height: 20px;
+    color: #98B0A3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.con_Graphic  a:hover {color: black; transition: 0.5s ease; text-shadow: 4px 4px 5px black;}
+.con_Graphic  a {text-decoration: none;}
+.con_Graphic  a:visited {color:#fbaf43;}
+
+.con_Theater {
+    position: absolute;
+    top: 1200px;
+    left: 60px;
+    font-size: 150%;
+    width: 450px;
+    text-align: left;
+    letter-spacing: 1.25px;
+    line-height: 50px;
+    color: #98B0A3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.con_Theater  a:hover {color: black; transition: 0.5s ease; text-shadow: 4px 4px 5px black;}
+.con_Theater  a {text-decoration: none;}
+.con_Theater  a:visited {color:#fbaf43;}
+
+.con_Music {
+    position: absolute;
+    top: 1035px;
+    left: 550px;
+    font-size: 150%;
+    width: 450px;
+    text-align: left;
+    letter-spacing: 1.25px;
+    line-height: 50px;
+    color: #98B0A3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.con_Music  a:hover {color: black; transition: 0.5s ease; text-shadow: 4px 4px 5px black;}
+.con_Music  a {text-decoration: none;}
+.con_Music  a:visited {color:#fbaf43;}
+
+
+
+.con_Media {
+    position: absolute;
+    top: 1145px;
+    left: 370px;
+    font-size: 125%;
+    width: 400px;
+    text-align: left;
+    letter-spacing: 1.25px;
+    line-height: 20px;
+    color: #98B0A3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.con_Media  a:hover {color: black; transition: 0.5s ease; text-shadow: 4px 4px 5px black;}
+.con_Media  a {text-decoration: none;}
+.con_Media  a:visited {color:#fbaf43;}
+
+.con_Desgin {
+    position: absolute;
+    top: 1140px;
+    left: 220px;
+    font-size: 150%;
+    width: 450px;
+    text-align: left;
+    letter-spacing: 1.25px;
+    line-height: 50px;
+    color: #98B0A3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.con_Desgin  a:hover {color: black; transition: 0.5s ease; text-shadow: 4px 4px 5px black;}
+.con_Desgin  a {text-decoration: none;}
+.con_Desgin  a:visited {color:#fbaf43;}
+
+.con_Film {
+    position: absolute;
+    top: 1140px;
+    left: 80px;
+    font-size: 150%;
+    width: 450px;
+    text-align: left;
+    letter-spacing: 1.25px;
+    line-height: 50px;
+    color: #98B0A3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.con_Film  a:hover {color: black; transition: 0.5s ease; text-shadow: 4px 4px 5px black;}
+.con_Film  a {text-decoration: none;}
+.con_Film  a:visited {color:#fbaf43;}
+
+.right_mainBox_Why {
+    position: absolute;
+    top: 1320px;
+    right: 67px;
+    font-size: 200%;
+    width: 500px;
+    color: #98B0A3;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+
+.right_mainBox_If {
+    position: absolute;
+    top: 1375px;
+    right: 67px;
+    font-size: 150%;
+    width: 500px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.right_mainBox_List {
+    position: absolute;
+    top: 1400px;
+    right: 140px;
+    font-size: 155%;
+    width: 400px;
+    color: #d58936;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
